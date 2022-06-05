@@ -3,31 +3,15 @@
 <head>
   <title>WEB1 - JavaScript</title>
   <meta charset="utf-8">
+  <script src="colors.js"> 
+</script>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <h1><a href="index.html">WEB</a></h1>
   <input id="night_day" type="button" value="night" onclick="
-    if(document.querySelecetor ('#night_day').value === 'night'){
-    document.querySeLetor('body').stylebackgroundColor= 'black';
-    document.querySeLetor('body').style.color='white';
-    document.querySeLetor('#night_day').value='day';
-    var alist = document.querySelectorAll('a');
-    var i = 0;
-    while(i < alist.length){
-      alist[i].style.color= 'powderblue';
-      i=i+1;
-    }
-  } else{
-    document.querySeLetor('body').stylebackgroundColor= 'white';
-    document.querySeLetor('body').style.color='black';
-    document.querySeLetor('#night_day').value='night';
-    var alist = document.querySelectorAll('a');
-    var i = 0;
-    while(i < alist.length){
-      alist[i].style.color= 'blue';
-      i=i+1;
-  }">
+    nightDayHandler(this);
+    ">
   <ol>
     <li><a href="1.html"> HTML</a></li>
     <li><a href="2.html"> CSS</a></li>
