@@ -1,23 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script>
-        var a=true;
-        var b=false;
-        var c=10>5;             //true
-        var d=Boolean(null);    //false
+        var result = confirm("정말로 회원을 탈퇴하시겠습니까?");
 
-        document.write(a, "<br>");
-        document.write(b, "<br>");
-        document.write(c, "<br>");
-        document.write(d, "<br>");
+        if (result) {
+            document.write("탈퇴 처리되었습니다!");
+        } else {
+            document.write("탈퇴 취소되었습니다!");
+        }
     </script>
 </head>
+
 <body>
-    
+
 </body>
+
 </html>

@@ -1,23 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script>
-        var a=true;
-        var b=false;
-        var c=10>5;             //true
-        var d=Boolean(null);    //false
-
-        document.write(a, "<br>");
-        document.write(b, "<br>");
-        document.write(c, "<br>");
-        document.write(d, "<br>");
+        for (var i = 1; i <= 10; i++) {
+            if (i % 2 == 0) continue;
+            document.write(i, "<br>");
+        }
+        document.write("====The End====");
     </script>
 </head>
+
 <body>
-    
+
 </body>
+
 </html>
