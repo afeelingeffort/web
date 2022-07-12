@@ -9,23 +9,21 @@
     <script src="jquery-3.6.0.min.js"></script>
     <script>
         $(function () {
-            $("#menu li:first")
-                .css({ "background-color": "#ff0" });
+            $("#wrap p:eq(2)").after("<p>After</p>");
+            $("<p>insertAfter</p>").insertAfter("#wrap p:eq(1)");
 
-            $("#menu li:last")
-                .css({ "background-color": "#0ff" });
+            $("#wrap p:eq(1)").before("<p>Before</p>");
+            $("<p>insertBefore</p>").insertBefore("#wrap p:eq(0)");
         });
     </script>
 </head>
 
 <body>
-    <h1>탐색 선택자</h1>
-    <ul id="menu">
-        <li>내용1</li>
-        <li>내용2</li>
-        <li>내용3</li>
-        <li>내용4</li>
-    </ul>
+    <div id="wrap">
+        <p>내용1</p>
+        <p>내용2</p>
+        <p>내용3</p>
+    </div>
 </body>
 
 </html>

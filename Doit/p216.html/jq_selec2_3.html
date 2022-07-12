@@ -9,11 +9,14 @@
     <script src="jquery-3.6.0.min.js"></script>
     <script>
         $(function () {
-            $("#menu li:first")
+            $("#menu li").eq(2)
                 .css({ "background-color": "#ff0" });
 
-            $("#menu li:last")
+            $("#menu li:lt(2)")
                 .css({ "background-color": "#0ff" });
+
+            $("#menu li:gt(2)")
+                .css({ "background-color": "#f0f" });
         });
     </script>
 </head>
@@ -25,6 +28,7 @@
         <li>내용2</li>
         <li>내용3</li>
         <li>내용4</li>
+        <li>내용5</li>
     </ul>
 </body>
 

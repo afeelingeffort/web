@@ -9,23 +9,23 @@
     <script src="jquery-3.6.0.min.js"></script>
     <script>
         $(function () {
-            $("#menu li:first")
-                .css({ "background-color": "#ff0" });
-
-            $("#menu li:last")
-                .css({ "background-color": "#0ff" });
+            $("h2").replaceWith("<h3>reaplace method</h3>");
+            $("<p>Change</p>").replaceAll("div");
         });
     </script>
 </head>
 
 <body>
-    <h1>탐색 선택자</h1>
-    <ul id="menu">
-        <li>내용1</li>
-        <li>내용2</li>
-        <li>내용3</li>
-        <li>내용4</li>
-    </ul>
+    <section class="box1">
+        <h2>제목1</h2>
+        <div>내용1</div>
+        <div>내용2</div>
+    </section>
+    <section class="box2">
+        <h2>제목2</h2>
+        <div>내용3</div>
+        <div>내용4</div>
+    </section>
 </body>
 
 </html>
