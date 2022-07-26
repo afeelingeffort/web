@@ -29,6 +29,7 @@
         }
 
         .search {
+            position: relative;
             width: 100%;
             text-align: center;
 
@@ -42,12 +43,11 @@
         }
 
         .button {
-            display: block;
+            position: absolute;
             text-align: center;
-            margin-top: 50px;
-            height: 50px;
-            border-radius: 50%;
+            margin-top: 100px;
             font-size: 30px;
+            border-radius: 50%
         }
     </style>
 </head>
@@ -59,7 +59,7 @@
     </div>
     <div class="logo"><span style="font-weight:bold">
             <h1 style="color:white" ;>
-                <p style="margin-top:100px;">Google</p>
+                <p style="margin-top:100px;">Hungry</p>
             </h1>
         </span></div>
 
@@ -69,7 +69,7 @@
     </div>
 
     <div class="button">
-        <button type="button" onclick="location.href='https://www.naver.com/'">네이버</button>
+        <button type="button" style="width:100px" onclick="location.href='https://www.naver.com/'">네이버</button>
         <button type="button" onclick="location.href='https://www.youtube.com/'">유튜브</button>
         <button type="button" onclick="location.href='project_4_1.html'">바로가기 추가</button>
     </div>
