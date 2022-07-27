@@ -29,7 +29,6 @@
         }
 
         .search {
-            position: relative;
             width: 100%;
             text-align: center;
 
@@ -40,38 +39,47 @@
             height: 40px;
             font-size: 15px;
             border-radius: 50px;
+
         }
 
         .button {
-            position: absolute;
             text-align: center;
-            margin-top: 100px;
-            font-size: 30px;
-            border-radius: 50%
+            font-size: 15px;
+            margin-top: 50px;
+        }
+
+        .input {
+            padding: 15px;
         }
     </style>
 </head>
 
-<body bgcolor="white">
+<body bgcolor="black">
     <div class="menu"><a href="https://mail.google.com/">Gmail</a>
         <a href="https://www.google.co.kr/imghp?hl=ko&tab=ri&ogbl">이미지</a> <a href="">▒</a>
 
     </div>
     <div class="logo"><span style="font-weight:bold">
             <h1 style="color:white" ;>
-                <p style="margin-top:100px;">Hungry</p>
+                <p style="margin-top:100px;">Google</p>
             </h1>
         </span></div>
 
     <div class="search">
-        <input type="text" placeholder="Google 검색 또는 URL 입력">
-        <img src="../Proejct/search.png">
+        <form action="https://www.google.com/search" method="GET">
+            <input name="q" type="text" placeholder="Google 검색 또는 URL 입력">
+        </form>
     </div>
 
     <div class="button">
-        <button type="button" style="width:100px" onclick="location.href='https://www.naver.com/'">네이버</button>
-        <button type="button" onclick="location.href='https://www.youtube.com/'">유튜브</button>
-        <button type="button" onclick="location.href='project_4_1.html'">바로가기 추가</button>
+        <input type="button" button style="width:50pt; height:50pt;" onclick="location.href='https://www.naver.com/'">
+        <input type="button" button style="width:50pt; height:50pt;" onclick="location.href='https://www.youtube.com/'">
+        <input type="button" button style="width:50pt; height:50pt;" onclick="location.href='https://github.com/'"></br>
+        <input type="button" button style="width:50pt; height:50pt;"
+            onclick="location.href='https://maplestory.nexon.com/Home/Main'">
+        <input type="button" button style="width:50pt; height:50pt;"
+            onclick="location.href='https://www.sten.or.kr/index.php'">
+        <input type="button" button style="width:50pt; height:50pt;" onclick="location.href='project_4_1.html'">
     </div>
 </body>
 
