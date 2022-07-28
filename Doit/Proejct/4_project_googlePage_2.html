@@ -31,6 +31,7 @@
         .search {
             width: 100%;
             text-align: center;
+            position: relative;
 
         }
 
@@ -49,9 +50,30 @@
         }
 
         .input {
+
             padding: 15px;
         }
+
+        .img {
+            position: absolute;
+            top: 100px;
+            height: 100%;
+        }
+
+        .btnName {
+            color: white;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            word-spacing: 10px;
+        }
     </style>
+    <script>
+        function enterkey() {
+            if (window.event.keycode == 13) {
+                search();
+            }
+        };
+    </script>
 </head>
 
 <body bgcolor="black">
@@ -67,7 +89,8 @@
 
     <div class="search">
         <form action="https://www.google.com/search" method="GET">
-            <input name="q" type="text" placeholder="Google 검색 또는 URL 입력">
+            <input name="q" type="text" onkeyup="enterkey();" placeholder="Google 검색 또는 URL 입력">
+            <button><img src="../Proejct/search.png"></button>
         </form>
     </div>
 
@@ -75,11 +98,13 @@
         <input type="button" button style="width:50pt; height:50pt;" onclick="location.href='https://www.naver.com/'">
         <input type="button" button style="width:50pt; height:50pt;" onclick="location.href='https://www.youtube.com/'">
         <input type="button" button style="width:50pt; height:50pt;" onclick="location.href='https://github.com/'"></br>
+        <div class="btnName">네이버 유튜브 깃허브</div>
         <input type="button" button style="width:50pt; height:50pt;"
             onclick="location.href='https://maplestory.nexon.com/Home/Main'">
         <input type="button" button style="width:50pt; height:50pt;"
             onclick="location.href='https://www.sten.or.kr/index.php'">
         <input type="button" button style="width:50pt; height:50pt;" onclick="location.href='project_4_1.html'">
+        <div class="btnName">메이플스토리 스텐 바로가기 추가</div>
     </div>
 </body>
 
