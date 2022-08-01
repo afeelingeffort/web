@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google</title>
+    <script src="jquery-3.6.0.min.js"></script>
+    <style>
+        a {
+            text-decoration: none;
+            font-size: 15px;
+            color: white;
+            padding-right: 10px;
+        }
+
+        .menu {
+            width: 100%;
+            text-align: right;
+        }
+
+        .logo {
+            width: 100%;
+            text-align: center;
+            padding: 0px;
+            border: 0px;
+            font-size: 40px;
+        }
+
+        input {
+
+            width: 550px;
+            height: 40px;
+            font-size: 15px;
+            border-radius: 50px;
+        }
+
+        .img {
+            position: absolute;
+
+        }
+
+        .btn1 {
+
+            text-align: center;
+            font-size: 15px;
+            margin-top: 50px;
+        }
+
+        .btnName {
+            color: white;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            word-spacing: 10px;
+        }
+
+        .search {
+            position: relative;
+            width: 100%;
+            text-align: center;
+        }
+
+        .set {
+            display: inline-block;
+        }
+    </style>
+    <script>
+        function enterkey() {
+            if (window.event.keycode == 13) {
+                search();
+            }
+        };
+    </script>
+    <script>
+        $("button").hover(function () {
+            $("button").css({ "background-color": "gray" });
+        }, function () {
+            $("button").css({ "background": "black" });
+        });
+    </script>
+    <script>
+
+    </script>
+</head>
+
+<body bgcolor="black">
+    <div class="menu"><a href="https://mail.google.com/">Gmail</a>
+        <a href="https://www.google.co.kr/imghp?hl=ko&tab=ri&ogbl">이미지</a>
+        <div class="set"><a href="">▒</a></div>
+    </div>
+    <div class="logo"><span style="font-weight:bold">
+            <h1 style="color:white" ;>
+                <p style="margin-top:100px;">Google</p>
+            </h1>
+        </span></div>
+
+    <div class="search">
+        <form action="https://www.google.com/search" method="GET">
+            <input id="searching" name="q" type="text" onkeyup="enterkey();" placeholder="Google 검색 또는 URL 입력">
+            <button><img src="../Proejct/search.png" style="width:30px; height:30px;"></button>
+        </form>
+
+    </div>
+
+    <div class="btn1">
+        <input type="button" button style="width:50pt; height:50pt;" onclick="location.href='https://www.naver.com/'">
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="button" button style="width:50pt; height:50pt;"
+            onclick="location.href='https://www.youtube.com/'">&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="button" button style="width:50pt; height:50pt;"
+            onclick="location.href='https://github.com/'">&nbsp;&nbsp;&nbsp;&nbsp;</br>
+        <div class="btnName">네이버&nbsp;&nbsp;&nbsp; 유튜브&nbsp;&nbsp; 깃허브&nbsp;&nbsp;</div>
+        <input type="button" button style="width:50pt; height:50pt;"
+            onclick="location.href='https://maplestory.nexon.com/Home/Main'">&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="button" button style="width:50pt; height:50pt;"
+            onclick="location.href='https://www.sten.or.kr/index.php'">&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="button" button style="width:50pt; height:50pt;" onclick="btnClick()">&nbsp;&nbsp;&nbsp;&nbsp;
+        <div class="btnName">메이플 스토리&nbsp;&nbsp;&nbsp; 스텐&nbsp;&nbsp; 바로가기 추가&nbsp;&nbsp;</div>
+
+    </div>
+</body>
+
+</html>
