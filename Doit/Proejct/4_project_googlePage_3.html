@@ -28,17 +28,28 @@
             font-size: 40px;
         }
 
-        input {
-
+        .search {
+            position: relative;
+            text-align: center;
             width: 550px;
-            height: 40px;
-            font-size: 15px;
-            border-radius: 50px;
+            margin: 0 auto;
         }
 
-        .img {
-            position: absolute;
+        input {
+            width: 100%;
+            border: 1px solid #bbb;
+            border-radius: 50px;
+            padding: 10px 12px;
+            font-size: 15px;
+            height: 40px;
+        }
 
+        img {
+            position: absolute;
+            width: 20px;
+            top: 20px;
+            right: 12px;
+            margin: 0;
         }
 
         .btn1 {
@@ -53,12 +64,6 @@
             margin-top: 5px;
             margin-bottom: 10px;
             word-spacing: 10px;
-        }
-
-        .search {
-            position: relative;
-            width: 100%;
-            text-align: center;
         }
 
         .set {
@@ -96,10 +101,12 @@
         </span></div>
 
     <div class="search">
-        <form action="https://www.google.com/search" method="GET">
-            <input id="searching" name="q" type="text" onkeyup="enterkey();" placeholder="Google 검색 또는 URL 입력">
-            <button><img src="../Proejct/search.png" style="width:30px; height:30px;"></button>
-        </form>
+        <div class="search">
+            <form action="https://www.google.com/search" method="GET">
+                <input id="searching" name="q" type="text" input type="text" placeholder="Google 검색 또는 URL 입력">
+                <img src="../Proejct/search.png">
+            </form>
+        </div>
 
     </div>
 
