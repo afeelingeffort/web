@@ -45,6 +45,14 @@
             height: 40px;
         }
 
+        input[type=button] {
+            background-color: #E3E1B8;
+        }
+
+        input[type=button]:hover {
+            background-color: #46000D
+        }
+
         img {
             position: absolute;
             width: 20px;
@@ -79,10 +87,12 @@
         };
     </script>
     <script>
-        $("button").hover(function () {
-            $("button").css({ "background-color": "gray" });
-        }, function () {
-            $("button").css({ "background": "black" });
+        $(function () {
+            $(".button").hover(function () {
+                $(".button").css({ "background-color": "gray" });
+            }, function () {
+                $(".button").css({ "background": "black" });
+            })
         });
     </script>
     <script>
@@ -108,23 +118,23 @@
                 <img src="../Proejct/search.png">
             </form>
         </div>
-
-
     </div>
 
     <div class="btn1">
-        <input type="button" button style="width:50pt; height:50pt;" onclick="location.href='https://www.naver.com/'">
+        <input type="button" class="button" button style="width:50pt; height:50pt;"
+            onclick="location.href='https://www.naver.com/'">
         &nbsp;&nbsp;&nbsp;&nbsp;
-        <input type="button" button style="width:50pt; height:50pt;"
+        <input type="button" class="button" button style="width:50pt; height:50pt;"
             onclick="location.href='https://www.youtube.com/'">&nbsp;&nbsp;&nbsp;&nbsp;
-        <input type="button" button style="width:50pt; height:50pt;"
+        <input type="button" class="button" button style="width:50pt; height:50pt;"
             onclick="location.href='https://github.com/'">&nbsp;&nbsp;&nbsp;&nbsp;</br>
         <div class="btnName">네이버&nbsp;&nbsp;&nbsp; 유튜브&nbsp;&nbsp; 깃허브&nbsp;&nbsp;</div>
-        <input type="button" button style="width:50pt; height:50pt;"
+        <input type="button" class="button" button style="width:50pt; height:50pt;"
             onclick="location.href='https://maplestory.nexon.com/Home/Main'">&nbsp;&nbsp;&nbsp;&nbsp;
-        <input type="button" button style="width:50pt; height:50pt;"
+        <input type="button" class="button" button style="width:50pt; height:50pt;"
             onclick="location.href='https://www.sten.or.kr/index.php'">&nbsp;&nbsp;&nbsp;&nbsp;
-        <input type="button" button style="width:50pt; height:50pt;" onclick="btnClick()">&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="button" class="button" button style="width:50pt; height:50pt;"
+            onclick="btnClick()">&nbsp;&nbsp;&nbsp;&nbsp;
         <div class="btnName">메이플 스토리&nbsp;&nbsp;&nbsp; 스텐&nbsp;&nbsp; 바로가기 추가&nbsp;&nbsp;</div>
 
     </div>
