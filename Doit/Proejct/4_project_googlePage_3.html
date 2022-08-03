@@ -70,6 +70,14 @@
         .set {
             display: inline-block;
         }
+
+        input[type=button] {
+            background-color: white
+        }
+
+        input[type=button]:hover {
+            background-color: gray
+        }
     </style>
     <script>
         function enterkey() {
@@ -77,16 +85,6 @@
                 search();
             }
         };
-    </script>
-    <script>
-        $("button").hover(function () {
-            $("button").css({ "background-color": "gray" });
-        }, function () {
-            $("button").css({ "background": "black" });
-        });
-    </script>
-    <script>
-
     </script>
 </head>
 
