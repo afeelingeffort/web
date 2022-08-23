@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>break 문</title>
+    <script>
+        //outer라는 식별자가 붙은 레이블 for문
+        outer: for (var i = 0; i < 3; i++) {
+            for (var j = 0; j < 3; j++) {
+                // i+j === 3이면 outer라는 식별자가 붙은 레이블 for문을 탈출한다.
+                if (i + j === 3) break outer;
+                console.log(`inner[${i},${j}]`);
+            }
+        }
+
+        console.log('Done!');
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

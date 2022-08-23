@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>if...else 문</title>
+    <script>
+        //x가 짝수이면 result 변수에 문자열 '짝수'를 할당하고, 홀수이면 문자열 '홀수'를 할당한다.
+        var x = 2;
+        var result;
+
+        if (x % 2) { //2 % 2는 0이다. 이때 0은 false로 암묵적 강제 변환한다.
+            result = '홀수';
+        } else {
+            result = '짝수';
+        }
+
+        console.log(result); //짝수
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

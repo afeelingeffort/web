@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>for 문</title>
     <script>
-        console.log(score); //undefinde
-
-        score=80; //값의 할당
-        var score; //변수 선언
-
-        console.log(score); //??
+        for (var i = 1; i <= 6; i++) {
+            for (var j = 1; j <= 6; j++) {
+                if (i + j === 6) console.log(`[${i},${j}]`);
+            }
+        }
     </script>
 </head>
+
 <body>
-    
+
 </body>
+
 </html>
