@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope</title>
+    <script>
+        function add(x, y) {
+            //매개변수는 함수 몸체 내부에서만 참조할 수 있다.
+            //즉, 매개변수의 스코프(유효범위)는 함수 몸체 내부다.
+            console.log(x, y); //2 5
+            return x + y;
+        }
+
+        add(2, 5);
+
+        //매개변수는 함수 몸체 내부에서만 참조할 수 있다.
+        console.log(x, y); //Error
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

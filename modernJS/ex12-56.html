@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pure Function</title>
+    <script>
+        var count = 0; //현재 카운트를 나타내는 상태
+
+        //순수 함수 increase는 동일한 인수가 전달되면 언제나 동일한 값을 반환한다.
+        function increase(n) {
+            return ++n;
+        }
+
+        //순수 함수가 반환한 결과값을 변수에 재할당해서 상태를 변경
+        count = increase(count);
+        conosole.log(count); //1
+
+        count = increase(count);
+        console.log(count); //2
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

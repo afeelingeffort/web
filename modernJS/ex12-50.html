@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repeat Function</title>
+    <script>
+        //n만큼 어떤 일을 반복한다.
+        function repeat1(n) {
+            //i를 출력한다.
+            for (var i = 0; i < n; i++) console.log(i);
+        }
+
+        repeat(5); // 0 1 2 3 4
+
+        //n만큼 어떤 일을 반복한다.
+        function repeat2(n) {
+            for (var i = 0; i < n; i++) {
+                //i가 홀수일 때만 출력한다.
+                if (i % 2) console.log(i);
+            }
+        }
+
+        repeat2(5); // 1 3
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

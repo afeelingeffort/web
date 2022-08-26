@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recursive Function</title>
+    <script>
+        function countdown(n) {
+            if (n < 0) return;
+            console.log(n);
+            countdown(n - 1); //재귀 호출
+        }
+
+        countdown(10);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
