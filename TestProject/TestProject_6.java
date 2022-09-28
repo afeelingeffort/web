@@ -3,15 +3,24 @@ public class TestProject_6 {
 
     public static void main(String[] args) {
         // TODO Auto-generated method stub
-        Tv t = new Tv("black", 4, false);
+        Tv t = new Tv("yellow", 4, false);
+
+        t.getChannel();
+        System.out.println();
+
+        String result = t.getColor();
+        System.out.println(result);
     }
 
 }
 
 class Tv {
-    String color;
-    int channel, volume;
-    boolean power;
+    private String color;
+    private int channel, volume;
+    private boolean power;
+
+    Tv() {
+    }
 
     Tv(String c, int n, boolean p) {
         this.color = c;
@@ -37,6 +46,17 @@ class Tv {
 
     public void volumeDown(int volume) {
         --volume;
+    }
+
+    public int getChannel() {
+        return channel;
+    }
+
+    public String getColor() {
+        String color;
+        color = "blue";
+        this.color = color;
+        return this.color;
     }
 
 }
