@@ -8,7 +8,6 @@ public class TestProject_14 {
 		int op1;
 		int op2;
 		String operator;
-		int result = 0;
 
 		while (true) {
 			System.out.print("첫 번째 정수를 입력하세요 : ");
