@@ -1,0 +1,14 @@
+<html>
+
+<body>
+    <script>
+        var m = parseInt(prompt("분 단위의 시간", 0));
+        var d = Math.floor(m / 1440);
+        m = m % 1440;
+        var h = Math.floor(m / 60);
+        var m = m % 60;
+        document.write(d, "일 ", h, "시간 ", m, "분");
+    </script>
+</body>
+
+</html>
