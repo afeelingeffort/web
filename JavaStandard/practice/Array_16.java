@@ -1,0 +1,19 @@
+
+public class Array_16 {
+
+	public static void main(String[] args) {
+		int sum=0;
+		float avg=0f;
+		int[] score= {100, 81, 93, 70, 55};
+		
+		for(int i=0; i<score.length; i++) {
+			sum+=score[i];
+		}
+		
+		avg=sum/(float) score.length;
+		
+		System.out.println("총점 : "+sum);
+		System.out.println("평균 : "+avg);
+	}
+
+}
